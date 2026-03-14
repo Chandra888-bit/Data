@@ -8,11 +8,3 @@ CDF is Delta Lake's native mechanism for exposing row-level change events. when 
 
 Source System (Snowflake/OLTP/Bigquery) --- Insert/Update/Delete---> Raw or Bronze(Layer) Table ----- Table_Changes ----> Silver/ Intermidiate Table (applied/merged).
 
-### Real Time Scenario
-You are working for a banking domain for credit card platform. Your team has realeased a new credit card into market with double reward points for buying any thing using this new credit card. There are 5 new customers with this credit card and there will be new customers adding upon day to day. Your job is to know who are the top 3 customers for the fiscal_year so we can give extra promotions to the customers. 
-### Step 1(source):
-The Source will be coming from some transactional table which is loaded in to your RAW or Bronze Layer(Delta Table) by INSERT,UPDATE and DELETE Operations. For this Bronze LAYER(DELTA TABLE) we will be ENABLING CHANGE DATA FEED = TRUE. 
-
-### Step 2(Silver Table/Intermidiate Table): 
-
-
